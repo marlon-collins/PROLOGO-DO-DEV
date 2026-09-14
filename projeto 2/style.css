@@ -1,0 +1,35 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e9f0ed;
+    margin: 0;
+}
+
+main {
+    max-width: 600px;
+    margin: 60px auto;
+    background: #ffff;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #04aa6d;
+    margin-top: 0;
+    
+}
+
+mark {
+    background: #fffd91;
+}
+
+button {
+    background: #04aa6d;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #028a56;
+}

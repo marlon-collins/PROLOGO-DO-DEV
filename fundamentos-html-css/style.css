@@ -1,0 +1,13 @@
+*body {
+    background-color: aliceblue;
+}
+.card {
+    border: 1px solid #dde4f0;
+    padding: 24px;
+    border-radius: 12px;
+    background: #fff;
+}
+/* esse jogo da veelha é referente ao ID que colocamos na TAG de H2*/
+#intro h2 {
+    color: #04aa6d;
+}

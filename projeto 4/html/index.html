@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css/style.css">
+        <script src="../javascript/script.js"></script>
+        <script src="https://www.w3schools.com/js/myScript.js"></script>
+        <script> function myfunction() { 
+            document.getElementById('demo5').innerHTML = "my fifth javascript";
+        } 
+        </script>
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>AQUI IREMOS TREINAR JAVASCRIPT</h1>
+        <p> abaixo vamos mostrar do que o java script é capaz </p>
+        <header>
+            <article>
+                <h2>JAVASCRIPT AS AÇÕES DE UMA PAGINA FRONT-END MORAM AQUI</h2>
+                <pre>
+                   Propósito:  #Java é uma linguagem de propósito geral usada para softwares de grande porte, servidores e aplicativos Android. *JavaScript foi criado para páginas da web e funciona para dar interatividade no navegador (e também no servidor com Node.js).
+                    Execução: O código Java precisa ser compilado em bytecode e roda na Máquina Virtual Java (JVM). O JavaScript é interpretado diretamente pelo navegador ou ambiente de execução.
+                    Tipagem:  Java usa tipagem estática e forte (é preciso declarar o tipo da variável, como intou String). JavaScript usa tipagem dinâmica e fraca (o tipo é definido em tempo de execução)
+                    Orientação a Objetos:  Java é orientado a objetos. JavaScript é multiparadigma (suporta objetos, funções e eventos) .
+
+                    Vantagens do JavaScript externo
+                    Colocar scripts em arquivos externos tem algumas vantagens:
+
+                    Separa HTML e código.
+                    Isso torna o HTML e o JavaScript mais fáceis de ler e manter.
+                    Arquivos JavaScript em cache podem acelerar o carregamento de páginas.
+                    Para adicionar vários arquivos de script a uma página, use várias tags de script. SEM MEDO
+
+                    Vantagens do JavaScript externo
+                    Colocar scripts em arquivos externos tem algumas vantagens:
+
+                    Separa HTML e código.
+                    Isso torna o HTML e o JavaScript mais fáceis de ler e manter.
+                    Arquivos JavaScript em cache podem acelerar o carregamento de páginas.
+                    Para adicionar vários arquivos de script a uma página, use várias tags de script:
+                </pre>
+
+            </article>
+        </header>
+
+
+        <img id="myImage" src="../imagens/pic_bulboff.gif" alt="bulboff" width="100" height="180">
+        <button onclick="document.getElementById('myImage').src='../imagens/pic_bulbon.gif'"> ligar </button>
+        
+        
+        <button onclick="document.getElementById('myImage').src='../imagens/pic_bulboff.gif'"> desligar </button>
+
+
+<br> 
+
+
+        <h2> OUTRAS FUNÇÕES DE JAVASCRIPT</h2>
+        <p id="demo2"> NESSE  topico , NESSE caso o java script ira mudar o estilo do texto tambem</p>
+
+        <button type="button" onclick="document.getElementById('demo2').style.fontSize='35px'"> Mudar Estilo </button>
+
+<br>
+
+        <h2> OUTRAS FUNÇÕES DE JAVASCRIPT </h2>
+        <p id="demo3"> NESSE  topico , NESSE caso o java script ira mudar o estilo o DISPLAY </p>
+
+        <button type="button" onclick="document.getElementById('demo3').style.display='none'"> Esconder Texto </button>
+        <button type="button" onclick="document.getElementById('demo3').style.display='block'"> Mostrar Texto </button>
+
+        <pre style="background-color: #af9316; padding: 10px; border: 1px solid #111010;"> 
+            UMA QUESTÃO INTERESSANTE, AQUI ESTAMOS FAZENDO SOMENTE BOTÕES COM AÇOES SIMPLES 
+            PARA OUTROS PARAMETROS TEREMOS DE INSERIR OBRIGATORIAMENTE A TAG SCRIPT. 
+            E TERÃO OUTROS MODELOS DE GET ESSE EM ESPECIFICO É "ID" SE REFERINDO A ALGUM ELEMENTO DA PÁGINA . 
+        </pre>
+
+
+        <br>
+
+        <h2>JAVA SCRIPT NO CABEÇA DO DOCUMENTO HTML</h2>
+        <p id="demo5"> um paragrafo da demo5 referente ao scipt da cabeça do documento</p>
+        <button type="button" onclick="myfunction()"> TESTEME </button>
+
+        <br>
+
+        <article>
+            <h3> E3XISTEM TAMBEM POSSIBILIDADES DE SAIDA</h3>
+            <pre>
+                Possibilidades de exibição em JavaScript
+                O JavaScript pode "exibir" dados de diferentes maneiras:
+
+                Escrevendo em um elemento HTML, usando innerHTMLou innerText.
+                Escrevendo na saída HTML usando document.write().
+                Escrevendo em uma caixa de alerta, usando window.alert().
+                Escrevendo no console do navegador, usando console.log().
+                Usando innerHTML
+                Para acessar um elemento HTML, você pode usar o document.getElementById(id)método.
+
+                Utilize o idatributo para identificar o elemento HTML.
+
+                Em seguida, utilize a innerHTMLpropriedade para alterar o conteúdo HTML do elemento HTML 
+            </pre>
+        </article>
+
+
+<br>
+
+
+        <h4>AQUI VAMOS COLOCAR O SCRIPT DIRETO NA PAGINA OU DE ONDE BUSCALO.</h4>
+        <pre id="demo4"> demo4 AQUI CHAMAREMOS A TAG SCRIPT QUASE NO FINAL UM POUCO ANTES DE /BODY FICARÁ ASSIM:
+            <mark> 
+                script> 
+                >document.getElementById('demo4').innerHTML = "my fourth javascript";
+                /script>
+            </mark>
+            ela servira pra colocar o script direto na pagina ou de onde buscá-lo.parecido com o style.css no inicio do nosso codigo.
+        </pre>
+
+
+ <br>
+
+        <h4>EXEMPLO DE JS.SCRIPT EXTERNO NO HEAD DO DOCUMENTO DE NOVO demo7 </h4>
+        <p id="demo7"> SETIMO JAVA </p>
+        <button type="button" onclick="myFunction()"> Try it </button>     
+
+
+
+<br>
+        
+        <H5>AQUI COLOCAMOS OUTRA FUNÇÃO NO RODAPÉ MAS DESSA VEZ COM FUNÇÃO DEMO6 </H5>
+        <p id="demo6"> SEXTO JAVA</p>
+        <button type="button" onclick="myFunction()"> Try it </button>
+
+
+
+<br>
+
+
+        <h6> vamos treinar saids daqui pra frente </h6>
+        <p id="demo8"> teste</p> 
+        
+        br
+
+        <h3> Usando document.write() </h3>
+        <pre>
+            aqui vamos usar o write que pode fazer calculos e imprimir o resultado do nosso js 
+            document.write (coloca o calculo aqui dentro) 
+            e a resposta sai direto na pagina.
+        </pre>
+        <p>quanto dá 5 + 6?</p>
+        <button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+        <br>
+
+        <h3> USANDO O WINDOW.ALERT </h3>
+        <pre>
+            aqui vamos usar o window.alert que pode fazer calculos e imprimir o resultado do nosso js 
+            window.alert (coloca o calculo aqui dentro) 
+            e a resposta sai em uma caixa de alerta.
+        </pre>
+        <p>quanto dá 10 * 30?</p>
+        <button type="button" onclick="window.alert(10 * 30)">Try it</button>
+
+        <br>
+        <h3> USANDO O CONSOLE.LOG </h3>
+        <pre>
+            aqui vamos usar o console.log que pode fazer calculos e imprimir o resultado do nosso js 
+            console.log (coloca o calculo aqui dentro) 
+            e a resposta sai no console do navegador.
+        </pre>
+        <p>quanto dá 15 / 150?</p>   
+        <button type="button" onclick="console.log( 15 / 150 )">Try it</button>
+
+        <h3>AQUI VAMOS CHAMAR IMPRESSÃO EM JS</h3>
+        <pre>
+            JavaScript não possui nenhum objeto print ou método print.
+
+            Não é possível acessar dispositivos de saída a partir do JavaScript.
+
+            A única exceção é que você pode chamar o window.print()método no navegador para imprimir o conteúdo da janela atual.
+        </pre>
+        <button onclick="window.print()">Print this page</button>
+
+
+<br>
+
+        <script> 
+        document.getElementById('demo4').innerHTML = "my fourth javascript";
+        function myfunction() {
+            document.getElementById("demo6").innerHTML = "my sixth javascript";
+        }
+        
+        document.getElementById("demo8").innerHTML = "<h6>Hello World</h6>";
+
+        //document.write(15 + 16);
+
+        //window.alert(10 * 30);
+
+        console.log(16 / 18);
+        </script>
+    </body>
+</html>

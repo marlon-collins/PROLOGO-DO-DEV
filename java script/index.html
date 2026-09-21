@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> funções e treinamento de java </title>
+</head>
+<body>
+    <h1>TREINAMETO JAVA SCRIPT </h1>
+    <p>JAVA </p>
+<p id="demo"></p>
+
+
+
+
+
+
+<script>
+    //const animais = ["ponei", "leao", "leopardo", "bufalo","girafa", "bode"];
+  //  let criancas = ["gabriela","julia", "magda", "bela", "thamy", "kelly"];
+    
+   // let juntatudo = "";
+
+ ///   for (let i = 0; i <animais.length ; i++) {
+  //      juntatudo += animais[i] + " pertence a " + criancas[i];
+        
+   // }
+   // console.log(juntatudo)
+
+
+   //VETORES BLOCOS DE INFORMAÇÕES [ AQUI DENTRO ],funções que estão atreladas a objetos.
+
+   // let numeros = [1, 2, 3, 4 , 5];
+   //   console .log(numeros);
+   //  numeros.length;
+   //numeros.push(15);// adiciona um novo elemento a direita
+   //console.log(numeros);
+   //numeros.unshift (381);// adiciona um novo elemento a esquerda EMPURRANDO todos os outros para a DIREITA
+   //console.log(numeros);
+   //REMOÇÕES
+   //numeros.shift();
+   //console.log(numeros);//remove o ultimo elemento adicionado;
+   
+   //numeros.pop();remove o ultimo elemento da direita
+   //console.log(numeros);
+   
+   //numeros.splice(0,2);
+   //console.log(numeros);remove em massa todos os elementos.
+   
+   // let funcionarios = ["Anakin", "hansolo"];
+   //  let funcionarios2 = ["mandalorian", "mustafar"];
+   
+   //  let todososFuncionarios = funcionarios.concat(funcionarios2);
+   // console.log(todososFuncionarios);// ATENÇÃO !!! AQUI nessa função de concat voce somente junta 2 variaveis ou vetores não é a mesma coisa que fundir como tentamos em outro serviço nosso.
+   // nesse caso em todososFuncionarios ira aparecer assim [anakin , hansolo, mandolorian, nmustafar], é necessario definir nesse caso uma variavel que irá receber tudo, pra que saia o resultado de união.
+   //let numeros2 = [];
+   // for (let i = 0; i<numeros.length; i += 1) {
+    // numeros2.push(numeros[i] * 10);
+    //}
+    // console.log(numeros2);
+    
+    //
+    
+    //let numeros2 = [];
+    //for (let i = 0; i<numeros.length; i += 1) {
+        // numeros2.push(numeros[i] * 10);
+        //}
+        //console.log(numeros2);
+        //let numeros = [10, 20, 30, 40 , 50];
+        //let numeros2[];
+
+        //for ( let i =0; i <numeros.length; i += 1) {
+       // /    numeros2.push(numeros[i] / 10);
+        //}
+       // function multiplicarPor10(n) {
+        //    return n * 10;
+       // }
+       // let numeros3 = numeros.map(multiplicarPor10);// AQUI O MAP FAZ UM ESPELHAMENTO DOS ARQUIVOS ORIGINAIS  OU SEJA NÃO TROCA O ARQUIVO ORIGINAL(ARRAYS COM AS INFORMAÇÕES ORIGINAIS).E TEM QUE TER O OUTRA VARIAVEL PRA RECEBER ESSAS NOVAS INFORMAÇÕES.
+      //  console.log(numeros3);
+      // METODO FILTER USA VERDADEIRO E FALSO
+      // function ehpar (n) {
+      //// return n % 2 === 0;
+       //}
+       //let numeros4 = numeros.filter(ehpar);
+       //console.log(numeros4);
+
+       //let numero5 = [];
+
+       //for (let i = 0; i < numeros.length; i += 1) {
+       // if (numeros[i] % 2 === 0) {
+       //     numero5.push(numeros[i]);
+       // }
+      // }
+      // console.log(numero5);
+
+
+
+//NESSE AQUI DE BAIXO VAMOS APENAS NEGAR ! PRA QUE ELE NOS DE O INVERSO DA OPERAÇÃO ANTERIOR NESSE CASO SOMENTE OS NUMEROS IMPARES
+    //   let numero5 = [];
+    ///   for (let i = 0; i<numeros.length; i += 1) {
+    //   if (numeros[i] % 2 !== 0) {
+     //   numero5.push(numeros[i]);
+     //   }
+     //  }
+     //  console.log(numero5);
+
+    //   function ehImpar (n) {
+    //    return !ehpar (n);
+    //   }
+     //  let numerosBob = numeros.filter(ehImpar); //AQUI TEMOS QUE USAR O MESMO JEITO , DA ANTERIOR NEGAR A NOSSA PROPRIA FUNÇÃO QUE O JAVA ENTEDI
+     //  console.log(numerosBob);
+     //  vetor.reverse();
+     //  console.log();
+
+     //  vetor.includes(9);
+     //  console.log();
+     //  vetor.indexOf(5);
+
+    // function divisivePor5 (n) {
+     //    return n % 5 === 0;
+    //    }
+    //    let numeros1 = [10,11,20,30,40];
+    //    vetor.find(divisivePor5);
+     
+  //  const taxa = 0.10;
+  //  const dolar = 5.56;
+   // let Cambio = taxa;
+
+  //  function compra (n) {
+  //      return (n) * 0.10;
+  //  }
+  //  function venda (n) {
+  //      return(n) - 0.10;
+ //   }  
+      
+//    console.log(compra);
+
+    function CriaMoeda (nome, sigla, valor) {
+        return{ nome:nome, sigla:sigla, valor:valor};
+    }
+    let moedas = {
+        usd:CriaMoeda ('Dolar', 'USD', 5.56810),
+        eur:CriaMoeda ('Euro', 'EUR', 6.63457),
+        gbp:CriaMoeda ('Libra', 'GBP', 7.64738),
+        jpy:CriaMoeda ('Iene', 'JPY', 0.05093),
+        ars:CriaMoeda ('Peso', 'ARS', 0.06033)
+    };
+      let casa = {
+        taxa:0.10
+      }
+
+
+    //casa.proporVenda = function (moeda, quantidade) {
+    ///    let valorAjustado = moeda.valor * (1 + this.taxa);
+    //    return quantidade * valorAjustado;
+    //}
+
+    casa.proporCompra = function (moeda, quantidade) {
+        let valorAjustado = moeda.valor + (moeda.valor * this.taxa);
+        return valorAjustado * quantidade;
+    }
+    casa.proporCompra = function (moeda, quantidade) {
+        let valorAjustado = moeda.valor * (1 - this.taxa);
+    }
+
+    casa.proporTroca = function (moeda1, qtd1, moeda2, qtd2) {
+        let propostaCompra = this.proporCompra(moeda1, qtd1),
+        let propostaVenda =  this.proporVenda(moeda2, qtd2)
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>    
+</body>
+</html>
